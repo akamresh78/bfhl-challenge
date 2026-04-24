@@ -152,6 +152,13 @@ export default function Home() {
                     {!h.has_cycle && h.tree && (
                       <HierarchyTree root={h.root} tree={h.tree} />
                     )}
+                    {h.has_cycle && (
+                      <div style={{ width: '100%', height: '350px', backgroundColor: '#000', borderRadius: '4px', border: '1px dashed #f59e0b', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-warning)', flexDirection: 'column', gap: '1rem' }}>
+                        <div style={{ fontSize: '3rem', opacity: 0.8 }}>🔁</div>
+                        <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.95rem', fontWeight: 600 }}>Cyclic Dependency Detected</div>
+                        <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Tree construction aborted as per rules</div>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
