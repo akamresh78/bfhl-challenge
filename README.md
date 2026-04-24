@@ -2,6 +2,8 @@
 
 A full-stack web application engineered for advanced graph data analysis. Built with **Next.js**, this application processes string-based node relationships (e.g., `A->B`), constructs visual hierarchical trees, and employs Depth First Search (DFS) algorithms to accurately detect cycles and calculate maximum root-to-leaf depth.
 
+🌟 **Live Demo:** [https://bfhl-challenge-dusky.vercel.app/](https://bfhl-challenge-dusky.vercel.app/)
+
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Framework](https://img.shields.io/badge/Next.js-16.2-black?logo=next.js)
 ![Styling](https://img.shields.io/badge/Styling-Vanilla_CSS-orange)
